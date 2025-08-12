@@ -1,0 +1,115 @@
+.plan-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 1rem;
+  border: 1px ;
+  background-color: rgba(0, 0, 0, 0.699);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: white;
+}
+
+.plan-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(255, 106, 0, 0.5), 0 0 10px rgba(255, 106, 0, 0.3);
+}
+
+
+.btn-subscribe {
+  transition: transform 0.3s ease;
+}
+
+.btn-subscribe:hover {
+  transform: scale(1.05); /* Corrected syntax */
+}
+/* Logo spacing */
+.navbar-brand img {
+  max-height: 70px;
+  width: auto;
+}
+
+/* Smooth and consistent search input */
+form[role="search"] input[type="search"] {
+  border-radius: 30px;
+  padding: 6px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Focus effect on search */
+form[role="search"] input[type="search"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ffffffaa;
+  border-color: #fff;
+}
+
+/* Rounded and clean search button */
+form[role="search"] button {
+  border-radius: 30px;
+  padding: 6px 20px;
+}
+
+/* Adjust menu item spacing */
+.navbar-nav .nav-link {
+  padding: 8px 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Active link style */
+.navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+}
+
+/* Mobile search input full width */
+@media (max-width: 991.98px) {
+  form[role="search"] {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form[role="search"] input[type="search"] {
+    width: 90% !important;
+    margin-bottom: 10px;
+  }
+
+  form[role="search"] button {
+    width: 50%;
+  }
+
+  .navbar-nav {
+    align-items: center;
+  }
+}
+.footer-link {
+  color: #ffffffcc;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+body {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  z-index: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url('../banner-image-41.4-01-1000x491-1.png') center center / cover no-repeat;
+  filter: blur(10px);
+  opacity: 0.6; /* Adjust darkness */
+  z-index: -1;
+}
