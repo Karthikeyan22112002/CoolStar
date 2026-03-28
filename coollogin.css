@@ -1,0 +1,121 @@
+/* Overall background and body */
+body.bd {
+  background-image: url(../banner-image-41.4-01-1000x491-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(10px);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Login container styling */
+.login-container {
+  background: #111111a6;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  max-width: 400px;
+  margin: 4rem auto;
+  box-shadow: 0 0 25px rgba(0, 136, 255, 0.2);
+}
+
+/* Form controls */
+.form-control {
+  background-color: #222;
+  color: white;
+  border: 1px solid #333;
+}
+
+.form-control:focus {
+  background-color: #222;
+  color: white;
+  border-color: #0d6efd;
+  box-shadow: none;
+}
+
+/* Login button */
+.btn-login {
+  background-color: #0d6efd;
+  border: none;
+  padding: 0.75rem;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #0b5ed7;
+  transform: scale(1.02);
+}
+
+/* Small footer/login links */
+.small-link {
+  font-size: 0.875rem;
+  color: #aaa;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.small-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Navbar logo scaling without increasing header size */
+.logo-img {
+  height: 100px;
+  width: auto;
+  transform: scale(1.3);
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.4);
+}
+
+/* Footer styling (from coolhome.css) */
+footer {
+  font-size: 0.9rem;
+}
+
+footer h5 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.footer-link {
+  color: #f8f9fa;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.footer-link:hover {
+  color: #ffc107;
+  text-decoration: underline;
+}
+/* Make the navbar search bar white */
+.navbar .form-control {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid #ccc;
+}
+
+.navbar .form-control::placeholder {
+  color: #666;
+}
+.logo-img {
+  height: 100px;       /* keep it visually consistent with navbar */
+  width: auto;
+  transform: scale(1.3);  /* scale up the image itself */
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.4);  /* optional hover zoom */
+}
+
